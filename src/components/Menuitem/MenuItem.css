@@ -1,0 +1,30 @@
+.app__menuitem {
+  width: 100%;
+  display: flex;
+  margin: 1rem 0;
+  flex-direction: column;
+}
+
+.app__menuitem-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app__menuitem-head_name {
+  flex: 1;
+}
+.app__menuitem-head_dash {
+  width: 90px;
+  height: 1px;
+  background-color: var(--color-golden);
+  margin: 0 1rem;
+}
+.app__menuitem-head_price {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1150px) {
+}

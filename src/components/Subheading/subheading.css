@@ -1,0 +1,36 @@
+.app__subheading p {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 29.9px;
+  letter-spacing: 0.92px;
+  text-transform: capitalize;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.25rem;
+  flex-direction: column;
+}
+.app__subheading p .spoon {
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 992px) {
+  .app__subheading p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .spoon {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 650px) {
+  .app__subheading p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .spoon {
+    font-size: 20px;
+  }
+}

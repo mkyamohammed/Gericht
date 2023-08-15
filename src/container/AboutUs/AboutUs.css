@@ -1,0 +1,121 @@
+.app__about {
+  position: relative;
+}
+.app__about-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+@media (max-width: 2560px) and (min-width: 770px) {
+  .app__about-overlay img {
+    width: 391px;
+    height: 415px;
+  }
+}
+/* .app__about-overlay img {
+  width: 391px;
+  height: 415px;
+} */
+.app__about-content {
+  z-index: 2;
+}
+.app__about-content_about {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+}
+.app__about-content_about h1 {
+}
+.spoon {
+  color: var(--color-golden);
+  transform: rotate(-45deg);
+}
+
+.app__about-content_knife {
+  margin: 2rem 4rem;
+}
+@media (max-width: 2560px) and (min-width: 770px) {
+  .app__about-content_knife img {
+    height: 910px;
+    margin: 0 !important;
+  }
+}
+.app__about-content_history {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+.app__about-content_history h1 {
+}
+.app__about-content_about .custom__button,
+.app__about-content_history .custom__button {
+  text-transform: capitalize;
+}
+
+.app__about-content_about p,
+.app__about-content_history p {
+  color: var(--color-grey);
+  margin: 2rem 0;
+}
+
+@media (max-width: 1025px) {
+  .app__about h1 {
+    font-size: 54px;
+  }
+  .spoon {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 992px) {
+  .app__about h1 {
+    font-size: 48px;
+  }
+  .app__about-content_about p,
+  .app__about-content_history p {
+    font-size: 14px;
+  }
+  .app__about-content_about .custom__button,
+  .app__about-content_history .custom__button {
+    padding: 0.25rem 1rem;
+  }
+}
+
+@media (max-width: 769px) {
+  /* .app__about-overlay img {
+    width: calc(391px - 170px);
+    height: calc(415px - 170px);
+  } */
+  .app__about-content {
+    flex-direction: column;
+  }
+  .app__about h1 {
+    font-size: 38px;
+    line-height: 30px;
+  }
+  .app__about-content_knife {
+    transform: rotate(-90deg);
+    /* margin: -206px; */
+  }
+  .app__about-content_about p,
+  .app__about-content_history p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .app__about-content_about .custom__button,
+  .app__about-content_history .custom__button {
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+@media (max-width: 321px) {
+  .app__about-overlay img {
+    height: 193px;
+  }
+}
